@@ -1,1 +1,1 @@
-# A Transformer-based Sentiment Analysis API
+# Transformer-based Sentiment Analysis API

@@ -41,7 +41,7 @@ The project follows a modular and oop-based architecture.
    uv run fastapi dev main.py
 ```
 
-The API will be available locally at: `http://localhost:8000` and the OpenAPI docs will be available at: `http://localhost:8000/docs`
+The API will be available locally at `http://localhost:8000` and the OpenAPI docs will be available at `http://localhost:8000/docs`
 
 ## References
 As stated, the ML model used was trained by Tunstall, Leandro Von Werra and Wolf (2022) in their book Natural Language Processing with Transformers and is publically accessible through the Hugging Face platform.

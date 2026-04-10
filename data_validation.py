@@ -11,3 +11,6 @@ class EmotionScoring(BaseModel):
 class APIResponse(BaseModel):
     text: str
     labels: list[EmotionScoring]
+
+class TextSubmitted(BaseModel):
+    customer_review: str

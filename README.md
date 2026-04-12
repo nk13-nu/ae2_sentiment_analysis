@@ -3,7 +3,22 @@ This project is a REST API for sentiment analysis which uses a transformer-based
 
 
 ## Design
+The project is designed by following OOP principles and a modular architecture. It is composed of four main files with the `main.py` file containing the API itself. The API is built using FastAPI and contains four endpoints. The sentiment analysis ML model is constructed within the `sentiment_analyser.py` file. Non-persistent storage is defined in the `sentiment_warehouse.py` file which contains the SentimentWarehouse class that defines the object giving access to methods used to store the texts/sentiments, access all stored text/sentiments and get the average score per emotion across all texts. Finally, Pydantic data models are defined within the `data_validation.py` module. These models are used to ensure integrity and the correct return of HTTP codes. The previous three features are then imported within `main.py` and integrated into the API's endpoints.
 
+## Available Endpoints
+There are four exposed endpoints.
+
+#### `GET /`
+Root endpoint that Returns a welcome message describing the API's purpose.
+
+#### `POST /sentiment`
+Classifies customer feedback across six emotions (sadness, joy, love, anger, fear, surprise) and stores the result.
+
+#### `GET /analyse/allSentiments`
+Returns every piece of customer feedback submitted to the API alongside its scores across the six emotions.
+
+#### `GET /analyse/averageSentiment`
+Returns the average score for each emotion across all stored customer reviews.
 
 
 ## Project Structure
